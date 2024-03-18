@@ -70,6 +70,11 @@ form{
 
 .btn button{
     font-size: 1.3vw;
+    text-align: center;
+    padding: 0.8vh 2vw;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
 }
 
 h4{
@@ -88,4 +93,35 @@ h4{
 
 .menuLinks a:hover{
     text-decoration: underline;
+}
+
+.para p{
+    color: #fff;
+    line-height: 2.4vh;
+    font-size: 1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 3vw;
+}
+
+.h2 h2{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2vw;
+}
+
+.volta{
+    position: absolute;
+    left: 2%;
+    top: 5%;
+}
+
+.volta img{
+    width: 4vw;
+}
+
+.video{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
 }
