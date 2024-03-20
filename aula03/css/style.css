@@ -1,0 +1,58 @@
+*, html{
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+header{
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    background-color: #e3604d;
+}
+
+nav{
+    /* position: relative; */
+    background-color: #af402f;
+    height: 3%;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 1.5vw;
+    margin-right: 1vw;
+    font-family: "Comic Sans MS";
+}
+
+.img{
+    width: 2.5vw;
+}
+
+.img img{
+    width: 100%;
+}
+
+.home{
+    margin-right: 1rem;
+}
+
+.bg{
+    position: absolute;
+    top: 10  %;
+    left: 0;
+}
+
+.bg img{
+    width: 100vw;
+    height: 100vh;
+}
