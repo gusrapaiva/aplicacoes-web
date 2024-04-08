@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .main{
     width: 100vw;
     height: 100vh;
@@ -12,11 +16,12 @@
 }
 
 .card{
-    background-color: aqua;
+    background-color: #62e78a;
     width: 24vw;
     height: 38vw;
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    overflow: hidden;
 }
 
 .img{
@@ -28,4 +33,82 @@
 
 .img img{
     width: 100%;
+}
+
+.p{
+    margin: auto;
+    font-size: 1vw;
+    width: 90%;
+    text-align: justify;
+    line-height: 2.3vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hora{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sContent, .fContent{
+    width: 95%;
+    margin: auto;
+}
+
+.relogio img{
+    width: 1.6vw;
+}
+
+.submit button{
+    width: 100%;
+    height: 8vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 2vh;
+    font-size: 2vw;
+    font-weight: bold;
+    background-color: #5e4a37;
+    color: #fff;
+}
+
+.rate{
+    display: flex;
+}
+
+.star img{
+    width: 2vw;
+}
+
+.star{
+    margin-left: 0.3vh;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loc img{
+    width: 2vw;
+}
+
+.loc{
+    display: flex;
+    align-items: center;
+}
+
+.nome{
+    margin-bottom: 1vh;
+}
+
+.back{
+    position: absolute;
+    left: 1%;
+    top: 0;
+}
+
+.back img{
+    width: 4vw;
 }
