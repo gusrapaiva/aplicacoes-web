@@ -52,6 +52,7 @@ header{
     width: 10vw;
     border: 3px solid white;
     height: 26vh;
+    overflow: hidden;
 }
 
 .imagem img{
