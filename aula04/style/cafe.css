@@ -13,6 +13,19 @@
 
 .card{
     background-color: aqua;
-    width: 18vw;
-    height: 30vw;
+    width: 24vw;
+    height: 38vw;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    height: 40%;
+}
+
+.img img{
+    width: 100%;
 }

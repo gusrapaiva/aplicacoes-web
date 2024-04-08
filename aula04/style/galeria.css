@@ -33,7 +33,7 @@ header{
     width: 30vw;
     height: 32vh;
     background: #594f4f;
-    padding: 3vh 2vw;
+    padding: 5vh 2.5vw;
     border-radius: 10px;
     color: #fff;
 }
@@ -64,6 +64,7 @@ header{
 }
 
 .desc{
+    font-size: 1.1vw;
     text-align: justify;
     width: 60%;
 }
