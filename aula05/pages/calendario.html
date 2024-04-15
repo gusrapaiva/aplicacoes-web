@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="../styles/calendario.css">
 </head>
 <body>
+
+    <div id="opaco">
+        <div class="hidden-container">
+            <div id="overimg"></div>
+            <button id='btn'>Fechar</button>
+        </div>
+    </div>
     
     <div class="calendario" id="c">
         <div class="header">
@@ -40,26 +47,6 @@
         <div class="dias" id="dias"></div>
     </div>
 
-    <script>
-        let box = document.getElementById('dias')
-        
-
-        for(i = 27; i <= 31; i++)
-        {
-            box.innerHTML += "<div class='past'>"+ i +"</div>"
-        }
-        for(i = 1; i <=30; i++)
-        {
-            if(i == 1)
-            {
-                box.innerHTML += "<div class='dia niver'>"+ i +" <img src='../assets/bolo.png' /></div>"
-            } 
-            else if((i == 2) || (i == 15) || (i == 20)){
-                box.innerHTML += "<div class='dia feriado'>"+ i +" Feriado</div>"
-            }else {
-                box.innerHTML += "<div class='dia'>"+ i +"</div>"
-            }
-        }
-    </script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>

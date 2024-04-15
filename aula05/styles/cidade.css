@@ -1,0 +1,60 @@
+*, html{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 960px;
+    margin: 2vh auto;
+}
+
+.cards{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #000;
+    border-radius: 30px;
+    padding: 1vh 2vh;
+}
+
+.title h1{
+    font-weight: 600;
+    font-size: 1.7vw;
+}
+
+.card{
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 2vw 1vh;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.foto{
+    width: 100%;
+    margin: auto;
+    border-bottom: 2px solid black;
+    padding: 1vh 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.foto img{
+    width: 100%;
+    height: 11vw;
+}
+
+.link{
+    margin-top: 2vh;
+}
+
+.txt{
+    height: 6vw;
+}

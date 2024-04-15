@@ -11,15 +11,20 @@ body{
     margin: 2vw auto;
     font-family: 'Comic Sans MS';
     width: 35vw;
-    height: 40vw;
+    /* height: 40vw; */
     background-color: #e2e3a9;
-    padding: 1vw 2vw;
+    padding: 2vw 2vw;
 }
 
 .header{
     text-align: center;
     margin-bottom: 2vw;
     font-size: 1.6vw;
+}
+
+.mes{
+    border-bottom: #000c0c 2px solid;
+    margin-bottom: 2vh;
 }
 
 .semana{
@@ -29,6 +34,7 @@ body{
 }
 
 .past{
+    text-align: center;
     background-color: #fff;
     color: gray;
     height: 5vw;
@@ -37,7 +43,7 @@ body{
 
 .weekday{
     font-size: 1.1vw;
-    border-bottom: 2px solid gray;
+    border-bottom: 1px solid #000c0c;
     margin-right: 1.2vh;
     width: 50%;
 }
@@ -47,7 +53,7 @@ body{
 }
 
 .dias{
-    height: 33vw;
+    height: 28vw;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 1vh 1vh;
@@ -68,6 +74,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 .niver img{
@@ -76,4 +83,35 @@ body{
 
 .feriado{
     background-color: #e4cd8a;
+    color: #000c0c;
+    cursor: pointer;
+}
+
+#opaco{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000000a9;
+    z-index: 99;
+    display: none;
+}
+
+.hidden-container{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#overimg img{
+    width: 40vw;
+}
+
+button{
+    padding: 1vh 2vh;
+    cursor: pointer;
+    font-size: 1.2vw;    
 }
