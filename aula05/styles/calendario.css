@@ -1,0 +1,79 @@
+*, html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000c0c;
+}
+
+.calendario{
+    margin: 2vw auto;
+    font-family: 'Comic Sans MS';
+    width: 35vw;
+    height: 40vw;
+    background-color: #e2e3a9;
+    padding: 1vw 2vw;
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 2vw;
+    font-size: 1.6vw;
+}
+
+.semana{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.past{
+    background-color: #fff;
+    color: gray;
+    height: 5vw;
+    border: 2px solid gray;
+}
+
+.weekday{
+    font-size: 1.1vw;
+    border-bottom: 2px solid gray;
+    margin-right: 1.2vh;
+    width: 50%;
+}
+
+.weekday:last-child{
+    margin-right: 0;
+}
+
+.dias{
+    height: 33vw;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1vh 1vh;
+    color: #fff;
+}
+
+.dia{
+    /* width: 3vw; */
+    height: 5vw;
+    background-color: #3e3932;
+    border: black 2px solid;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.niver {
+    background-color: #0fbab7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.niver img{
+    width: 3vw;
+}
+
+.feriado{
+    background-color: #e4cd8a;
+}

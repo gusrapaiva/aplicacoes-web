@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="../styles/calendario.css">
+</head>
+<body>
+    
+    <div class="calendario" id="c">
+        <div class="header">
+            <div class="mes">
+                <h1>Novembro</h1>
+            </div>
+            <div class="semana">
+                    <div class="weekday">
+                        Domingo
+                    </div>
+                    <div class="weekday">
+                        Segunda
+                    </div>
+                    <div class="weekday">
+                        Terça
+                    </div>
+                    <div class="weekday">
+                        Quarta
+                    </div>
+                    <div class="weekday">
+                        Quinta
+                    </div>
+                    <div class="weekday">
+                        Sexta
+                    </div>
+                    <div class="weekday">
+                        Sábado
+                    </div>
+            </div>
+        </div>
+        <div class="dias" id="dias"></div>
+    </div>
+
+    <script>
+        let box = document.getElementById('dias')
+        
+
+        for(i = 27; i <= 31; i++)
+        {
+            box.innerHTML += "<div class='past'>"+ i +"</div>"
+        }
+        for(i = 1; i <=30; i++)
+        {
+            if(i == 1)
+            {
+                box.innerHTML += "<div class='dia niver'>"+ i +" <img src='../assets/bolo.png' /></div>"
+            } 
+            else if((i == 2) || (i == 15) || (i == 20)){
+                box.innerHTML += "<div class='dia feriado'>"+ i +" Feriado</div>"
+            }else {
+                box.innerHTML += "<div class='dia'>"+ i +"</div>"
+            }
+        }
+    </script>
+</body>
+</html>
