@@ -11,12 +11,12 @@ for(i = 1; i <=30; i++)
 {
     if(i == 1)
     {
-        box.innerHTML += "<div class='dia niver'>"+ i +" <img src='../assets/bolo.png' /></div>"
+ box.innerHTML += "<div class='dia niver'>"+ i +" <img src='../assets/bolo.png' /></div>"
     } 
     else if((i == 2) || (i == 15) || (i == 20)){
-        box.innerHTML += "<div class='dia feriado'>"+ i +" Feriado</div>"
+ box.innerHTML += "<div class='dia feriado'>"+ i +" Feriado</div>"
     }else {
-        box.innerHTML += "<div class='dia'>"+ i +"</div>"
+ box.innerHTML += "<div class='dia'>"+ i +"</div>"
     }
 }
 
