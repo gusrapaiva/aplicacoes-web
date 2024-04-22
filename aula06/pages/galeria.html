@@ -13,34 +13,20 @@
     </div>
     <script>
         let galeria = document.getElementsByClassName('galeria');
-        let foto = document.getElementsByClassName('img');
-        let back = document.getElementsByClassName('back');
-        let clicked = false
 
         for(i = 1; i <= 12; i++)
         {
-            galeria[0].innerHTML += `<div class="img" id="${i}"><img src="../assets/img${i}.jpg"> <div class="back"></div></div>`
+            galeria[0].innerHTML += `
+                <div class="card-container">
+                        <div class="card">
+                            <div class="side"><img src="../assets/img${i}.jpg"></div>
+                            <div class="side back"><p>Bonita paisagem</p></div>
+                        </div>
+                </div>  
+            `
         }
 
-        foto[0].onclick = () => {
-                if(!clicked)
-                {
-                    foto[0].style.transform = "rotateY(180deg)"
-                    clicked = true
-                } else {
-                    foto[0].style.transform = "rotateY(0deg)"
-                    clicked = false
-                }
-            }
 
-        // setInterval(() => {
-        //     for(i = 0; i <= foto.length; i++)
-        // {
-        //     foto[i].onclick = () => {
-        //         foto[i].style.transform = "rotate(90deg)"  
-        //     }
-        // }
-        // }, 500)
         
 
     </script>
