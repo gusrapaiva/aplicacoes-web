@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="../styles/galeria.css">
+</head>
+<body>
+
+    <div class="galeria">
+        
+    </div>
+    <script>
+        let galeria = document.getElementsByClassName('galeria');
+        let foto = document.getElementsByClassName('img');
+        let back = document.getElementsByClassName('back');
+        let clicked = false
+
+        for(i = 1; i <= 12; i++)
+        {
+            galeria[0].innerHTML += `<div class="img" id="${i}"><img src="../assets/img${i}.jpg"> <div class="back"></div></div>`
+        }
+
+        foto[0].onclick = () => {
+                if(!clicked)
+                {
+                    foto[0].style.transform = "rotateY(180deg)"
+                    clicked = true
+                } else {
+                    foto[0].style.transform = "rotateY(0deg)"
+                    clicked = false
+                }
+            }
+
+        // setInterval(() => {
+        //     for(i = 0; i <= foto.length; i++)
+        // {
+        //     foto[i].onclick = () => {
+        //         foto[i].style.transform = "rotate(90deg)"  
+        //     }
+        // }
+        // }, 500)
+        
+
+    </script>
+</body>
+</html>
