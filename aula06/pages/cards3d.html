@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albuns</title>
+    <link rel="stylesheet" href="../styles/cards3d.css">
 </head>
 <body>
+
+    <h1>Álbuns</h1>
     
+    <div id="container">
+
+
+    </div>
+
+    <script>
+        let container = document.getElementById('container')
+        let nomes = [
+            "Brazooka: Br Bluntz",
+            "Mãos, Cordas e Luz",
+            "Kalledy",
+            "All Blue"
+        ]
+
+        for(i = 1; i <= nomes.length; i++){   
+            container.innerHTML += `
+                <div class="card">
+                    <div class="img">
+                        <img src="../assets/album${i}.jpg">
+                    </div>
+                    <div class="desc">
+                        <h1>${nomes[i-1]}</h1>
+                    </div>
+                </div>
+            `
+        }
+    </script>
 </body>
 </html>
