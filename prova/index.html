@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="title">
+            <h1>Gustavo Paiva</h1>
+        </div>
+        <div class="items">
+            <ul>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#portifolios">Portifólios</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="main">
+        <div class="habilidades" id="habilidades">
+            <div class="title-section">
+                <h1>Habilidades</h1>
+            </div>
+            <div class="grid">
+                
+            </div>
+        </div>
+
+        <div class="portifolios" id="portifolios">
+            <div class="title-section">
+                <h1>Portifólios</h1>
+            </div>
+            <div class="links">
+
+                <div class="link">
+                    <div class="img">
+                        <img src="assets/github.png">
+                    </div>
+                    <div class="name">
+                        GitHub
+                    </div>
+                </div>
+
+                <div class="link">
+                    <div class="img">
+                        <img src="assets/linkedin.jpg">
+                    </div>
+                    <div class="name">
+                        Linkedin
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="contato" id="contato">
+            <div class="title-section">
+                <h1>Envie seu E-mail para contato</h1>
+            </div>
+            <div class="form">
+                <form>
+                    <div class="inputbox">
+                        <input type="email" required name="email" placeholder="fulano@companhia.com">
+                    </div>
+                    <div class="btn">
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        let grid = document.getElementsByClassName('grid');
+        let link = document.getElementsByClassName('link');
+
+        let foto_nome = [
+            [
+                'php', 'laravel', 'js', 'html', 'css', 'csharp'
+            ],
+
+            [
+                'Php', 'Laravel', 'JavaScript', 'CSS', 'C#'
+            ]
+        ]
+
+        link[0].onclick = () => {
+            window.location.href = 'https://www.github.com/gusrapaiva'
+        }
+
+        link[1].onclick = () => {
+            window.location.href = 'https://www.linkedin.com/in/gustavo-ra-paiva'
+        }
+
+        for(i = 0; i < 6; i++)
+        {
+            grid[0].innerHTML += `
+                <div class="skill">
+                    <div class="img">
+                        <img src="assets/${foto_nome[0][i]}.png">
+                    </div>
+                    <div class="name">
+                        <h2>${foto_nome[1][i]}</h2>
+                    </div>
+                </div>
+            `
+        }
+    </script>
+</body>
+</html>
